@@ -1,25 +1,21 @@
 {
   "compilerOptions": {
-    /* Language and Environment */
     "target": "ES2022",
-    "module": "ESNext",
-    "moduleResolution": "Node",
 
-    /* Output */
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
     "outDir": "dist",
     "rootDir": ".",
 
-    /* Module Support */
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
 
-    /* Type Checking */
     "strict": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
 
-    /* Performance */
     "incremental": true
   },
 
