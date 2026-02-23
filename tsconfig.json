@@ -1,29 +1,29 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ],
- 
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "target": "ESNext",
+    /* Language and Environment */
+    "target": "ES2022",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
+
+    /* Output */
+    "outDir": "dist",
+    "rootDir": ".",
+
+    /* Module Support */
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+
+    /* Type Checking */
     "strict": true,
     "skipLibCheck": true,
-    "allowJs": true,
-    "noImplicitAny": false,
-    "noUnusedParameters": false,
-    "noUnusedLocals": false,
-    "strictNullChecks": false
+    "forceConsistentCasingInFileNames": true,
+
+    /* Performance */
+    "incremental": true
   },
-  "ts-node": {
-    "esm": true
-  }
+
+  "include": [
+    "website-help-mail-server.ts"
+  ]
 }
