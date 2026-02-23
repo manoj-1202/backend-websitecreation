@@ -4,13 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:dev": "vite build --mode development",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "start": "ts-node --esm server.ts",
-    "start:website-help-mail": "ts-node --esm website-help-mail-server.ts"
+  "dev": "vite",
+  "build": "vite build",
+  "build:dev": "vite build --mode development",
+  "preview": "vite preview",
+
+  "build:server": "tsc",
+  "start": "node dist/website-help-mail-server.js",
+  "dev:server": "ts-node --esm website-help-mail-server.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
